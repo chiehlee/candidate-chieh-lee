@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: eu.gcr.io/code-assignment-10/webapp-candidateName
+  repository: eu.gcr.io/code-assignment-10/webapp-chiehlee
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -24,3 +24,5 @@ serviceAccount:
 service:
   type: ClusterIP
   port: 80
+
+dataCategory: people
